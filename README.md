@@ -1,4 +1,4 @@
-# provision-with-micromamba -- pha
+# provision-with-micromamba -- phaII
 
 [![test](https://github.com/mamba-org/provision-with-micromamba/workflows/test/badge.svg)](https://github.com/mamba-org/provision-with-micromamba/actions?query=workflow%3Atest)
 
