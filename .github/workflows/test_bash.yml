@@ -2,7 +2,7 @@ name: Test bash
 on:
   push:
     branches:
-      - main
+      - reference
   pull_request: null
 
 jobs:
@@ -20,6 +20,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: 'reference'
 
       - name: install mamba
         uses: ./

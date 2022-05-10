@@ -2,7 +2,7 @@ name: Test lock files
 on:
   push:
     branches:
-      - main
+      - reference
   pull_request: null
 
 jobs:
@@ -21,6 +21,8 @@ jobs:
         shell: bash -l {0}
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: 'reference'
 
       - name: install from lockfile
         uses: ./
